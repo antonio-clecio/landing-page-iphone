@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>iPhone - Apple (BR)</title>
-  </head>
-  <body>
-    <div>
-      <p>Menu Superior</p>
-    </div>
-    <div class="container">
-      <div>
-        <h1 class="main-title">iPhone 14</h1>
-        <h2 class="secondary-title">Tão poderoso. Tão ao seu alcance.</h2>
-        <p class="main-text">Em dois tamanhos perfeitos. Agora com um toque de amarelo.</p>
-        <h3 class="price">A partir de R$ 633,25/mês ou R$ 7.599*</h3>
-        <button class="btn">Comprar</button>
-        <p class="choose-color">Escolha sua cor:</p>
+  <link rel="stylesheet" href="style.css" />
 
-        <div>
-          <button class="blue color-exchange"></button>
-          <button class="yellow color-exchange"></button>
-          <button class="white color-exchange"></button>
-          <button class="black color-exchange"></button>
-          <button class="red color-exchange"></button>
-          <button class="purple color-exchange"></button>
+  <title>iPhone - Apple (BR)</title>
+</head>
+
+<body>
+  <header>
+    <img src="./img/logo.png" alt="Logo do iPhone" class="logo">
+    <ul>
+      <li><a href="#">Mac</a></li>
+      <li><a href="#">iPad</a></li>
+      <li><a href="#">iPhone</a></li>
+      <li><a href="#">Watch</a></li>
+      <li><a href="#">AirPods</a></li>
+      <li><a href="#">Acessórios</a></li>
+      <li><a href="#">Suporte</a></li>
+    </ul>
+  </header>
+  <main>
+    <section>
+      <div class="circle"></div>
+      <div class="main-text">
+        <h2>iPhone 14</h2>
+        <h3>Tão poderoso. Tão ao seu alcance.</h3>
+        <p>Em dois tamanhos perfeitos. Agora com um toque de amarelo.</p>
+        <h6>A partir de R$ 633,25/mês ou R$ 7.599*</h6>
+        <button>Comprar</button>
+        <h5>Escolha sua cor:</h5>
+
+        <div class="content">
+          <span id="azul"></span>
+          <span id="amarelo"></span>
+          <span id="branco"></span>
+          <span id="preto"></span>
+          <span id="vermelho"></span>
+          <span id="roxo"></span>
         </div>
       </div>
-      <img src="./img/iphone-azul.png" />
-    </div>
-  </body>
+      <img src="./img/iphone-azul.png" class="img-iphone" alt="Imagem do iPhone" id="phone">
+    </section>
+  </main>
+</body>
+
 </html>
