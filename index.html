@@ -36,17 +36,29 @@
         <h5>Escolha sua cor:</h5>
 
         <div class="content">
-          <span id="azul"></span>
-          <span id="amarelo"></span>
-          <span id="branco"></span>
-          <span id="preto"></span>
-          <span id="vermelho"></span>
-          <span id="roxo"></span>
+          <span id="azul" onclick="imgSlider('./img/iphone-azul.png'); circleChange('#81A5C4')"></span>
+          <span id="amarelo" onclick="imgSlider('./img/iphone-amarelo.png'); circleChange('#F7DA47')"></span>
+          <span id="branco" onclick="imgSlider('./img/iphone-branco.png'); circleChange('#C1C1C1')"></span>
+          <span id="preto" onclick="imgSlider('./img/iphone-preto.png'); circleChange('#272D33')"></span>
+          <span id="vermelho" onclick="imgSlider('./img/iphone-vemelho.png');circleChange('#B50012')"></span>
+          <span id="roxo" onclick="imgSlider('./img/iphone-roxo.png');circleChange('#EDE7F1')"></span>
         </div>
       </div>
       <img src="./img/iphone-azul.png" class="img-iphone" alt="Imagem do iPhone" id="phone">
     </section>
   </main>
+  
+  <script type="text/javascript">
+    /*Função de mudar o celular*/
+    function imgSlider(e) {
+      document.querySelector('#phone').src = e;
+    }
+    /*Função de mudar a cor do circulo*/
+    function circleChange(color) {
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
 </body>
 
 </html>

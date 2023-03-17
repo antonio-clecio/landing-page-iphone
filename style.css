@@ -135,8 +135,8 @@ main section {
 }
 
 .img-iphone {
-  width: 500px;
-  z-index: 99999;
+  width: 450px;
+  z-index: 99;
   margin-top: 100px;
 }
 
